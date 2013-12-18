@@ -14,8 +14,8 @@
 /* CSS for zoom window. */
 .cloudzoom-zoom {
     border:1px solid #888;
-    width:500px;
-    height:500px;
+    width:600px;
+    height:600px;
     box-shadow: -0px -0px 10px rgba(0,0,0,0.40);
 }
 /* CSS for zoom window in 'inside' mode. */
@@ -38,12 +38,12 @@
 
 /* A blank image */
 .cloudzoom-blank {
-    background-image:url(blank.png);
+    background-image:url(<%= asset_data_uri('spree/frontend/blank.png') %>);
 }
 
 /* The animated ajax loading image */
 .cloudzoom-ajax-loader {
-    background-image:url(ajax-loader.gif);
+    background-image:url(<%= asset_data_uri('spree/frontend/ajax-loader.gif') %>);
     width:32px;
     height:32px;
 }

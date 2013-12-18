@@ -1,2 +1,2 @@
 <!-- replace 'erb[loud]:contains("image_tag")' -->
-  <%= image_tag image.attachment.url(:product), itemprop: "image", :class => "cloudzoom", :'data-cloudzoom' => "zoomImage: '#{image.attachment.url(:original)}'" %>
+  <%= link_to( image_tag(image.attachment.url(:product), itemprop: "image", :class => "cloudzoom"), image.attachment.url(:original)) %>
