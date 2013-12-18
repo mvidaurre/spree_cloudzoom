@@ -1,4 +1,3 @@
 <!-- replace 'erb[loud]:contains("product_image")' -->
-  <a id = "zoomlense" href = "<%= @product.images.first.attachment.url(:original) %>">
-    <%= product_image(@product, itemprop: "image", :class => "cloudzoom", :id => "zoomlense-img") %>
-  </a>
+  <%= product_image(@product, {itemprop: "image", :class => "cloudzoom", :id => "zoomlense-img", :'data-cloudzoom' => "zoomImage: '#{@product.images.first.attachment.url(:original)}', autoInside:550, zoomSizeMode:'image'"}) %>
+  
