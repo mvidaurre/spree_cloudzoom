@@ -1,2 +1,4 @@
 <!-- replace 'erb[loud]:contains("product_image")' -->
-  <%= link_to( product_image(@product, itemprop: "image", :class => "cloudzoom"), @product.images.first.attachment.url(:original)) %>
+  <a id = "zoomlense" href = "<%= @product.images.first.attachment.url(:original) %>">
+    <%= product_image(@product, itemprop: "image", :class => "cloudzoom", :id => "zoomlense-img") %>
+  </a>
