@@ -1,3 +1,7 @@
-<!-- replace 'erb[loud]:contains("product_image")' -->
-  <%= product_image(@product, {itemprop: "image", :class => "cloudzoom", :id => "zoomlense-img", :'data-cloudzoom' => "zoomImage: '#{@product.images.first.attachment.url(:original)}', autoInside:550, zoomSizeMode:'image'"}) %>
+<!-- replace 'erb[loud]:contains("product_image")'  -->
+  <% unless @product.images.first.nil? %>
+    <%= product_image(@product, {itemprop: "image", :class => "cloudzoom", :id => "zoomlense-img", :'data-cloudzoom' => "zoomImage: '#{@product.images.first.attachment.url(:original)}', autoInside:550, zoomSizeMode:'image'"}) %>
+  <% else %>
+    <%= product_image(@product, :itemprop => "image") %> 
+  <% end %>
   
