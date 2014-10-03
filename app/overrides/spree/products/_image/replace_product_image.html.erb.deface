@@ -1,7 +1,9 @@
 <!-- replace 'erb[loud]:contains("product_image")'  -->
   <% unless @product.images.first.nil? %>
     <figure>
-      <%= product_image(@product, {itemprop: "image", :class => "cloudzoom", :id => "zoomlense-img", :'data-cloudzoom' => "zoomImage: '#{@product.images.first.attachment.url(:original)}', autoInside:550, zoomSizeMode:'image', hoverIntentDelay: 500, touchStartDelay: 250"}) %>
+      <a id = "product-current-image" title="Ponga el cursor sobre la imagen para hacer zoom"  href = "<%= @product.images.first.attachment.url(:original) %>">
+      <%= product_image(@product, {itemprop: "image", :class => "fancybox cloudzoom", :id => "zoomlense-img", :'data-cloudzoom' => "zoomImage: '#{@product.images.first.attachment.url(:original)}', autoInside:550, zoomSizeMode:'image', hoverIntentDelay: 500, touchStartDelay: 500"}) %>
+      </a>
       <figcaption id="zoom-message"><%= Spree.t('cloudzoom.zoom-message')%></figcaption>
     </figure>
   <% else %>
