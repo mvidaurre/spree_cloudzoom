@@ -14,21 +14,16 @@
 /* CSS for zoom window. */
 .cloudzoom-zoom {
     border:1px solid #888;
-    width:600px;
-    height:600px;
+    width:500px;
+    height:200px;
     box-shadow: -0px -0px 10px rgba(0,0,0,0.40);
+    z-index:999;
 }
 /* CSS for zoom window in 'inside' mode. */
 .cloudzoom-zoom-inside {
     border:none;
     box-shadow:none;
-}
-
-@media only screen and (max-width: 640px) {
-  .cloudzoom-zoom {
-    border:none !important;
-    box-shadow:none !important;
-  }
+    z-index:999;
 }
 
 /* CSS for captions */
@@ -45,12 +40,12 @@
 
 /* A blank image */
 .cloudzoom-blank {
-    background-image:url(<%= asset_data_uri('spree/frontend/blank.png') %>);
+    background-image:url(blank.png);
 }
 
 /* The animated ajax loading image */
 .cloudzoom-ajax-loader {
-    background-image:url(<%= asset_data_uri('spree/frontend/ajax-loader.gif') %>);
+    background-image:url(ajax-loader.gif);
     width:32px;
     height:32px;
 }
