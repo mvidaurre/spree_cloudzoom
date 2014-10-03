@@ -25,15 +25,15 @@ $(function(){
         maxWidth: 1024,
         maxHeight:768,
         afterShow: function(){
-            var $image = $('.fancybox-image');
+            var $image = $('#zoomlense-img');
             $image.CloudZoom({zoomPosition:'inside', zoomOffsetX:0});
         },
         beforeLoad: function(){
-            var $image = $('.fancybox-image');
+            var $image = $('#zoomlense-img');
             if ($image.data('CloudZoom')) $image.data('CloudZoom').destroy();
         },
         beforeClose: function(){
-            var $image = $('.fancybox-image');
+            var $image = $('#zoomlense-img');
             if ($image.data('CloudZoom')) $image.data('CloudZoom').destroy();
         }
     });
