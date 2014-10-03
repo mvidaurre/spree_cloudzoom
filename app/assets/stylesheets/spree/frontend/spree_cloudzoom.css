@@ -5,4 +5,7 @@ the installer will append this file to the app vendored assets here: 'vendor/ass
  *= require_tree .
 
 */
-
+.cloudzoom-zoom {
+    width:800px;
+    height:800px;
+}

@@ -1,6 +1,6 @@
 <!-- replace 'erb[loud]:contains("image_tag")' -->
   <% unless @product.images.first.nil? %>
-    <a id = "zoomlense" href = "<%= @product.images.first.attachment.url(:original) %>">
+    <a id = "zoomlense" title="Ponga el cursor sobre la imagen para hacer zoom"  href = "<%= @product.images.first.attachment.url(:original) %>">
     <%= image_tag(image.attachment.url(:product), itemprop: "image", :class => "cloudzoom", :id => "zoomlense-img", :'data-cloudzoom' => 'autoInside:550, zoomSizeMode:"image"') %>
     </a>
   <% else %>
