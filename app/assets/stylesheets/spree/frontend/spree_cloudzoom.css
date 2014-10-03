@@ -9,3 +9,9 @@ the installer will append this file to the app vendored assets here: 'vendor/ass
     width:800px;
     height:800px;
 }
+
+#zoom-message {
+  background-color: #ff0000;
+  color: #ffffff;
+  font-weight: bolder;
+}

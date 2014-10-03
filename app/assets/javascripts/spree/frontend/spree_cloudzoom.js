@@ -40,4 +40,10 @@ $(function(){
            
 });
 
+$(function() {
+   $('#zoom-message').delay(500).fadeIn('normal', function() {
+      $(this).delay(10000).fadeOut("slow");
+   });
+})
+
     
