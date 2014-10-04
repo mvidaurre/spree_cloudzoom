@@ -14,6 +14,7 @@ the installer will append this file to the app vendored assets here: 'vendor/ass
   background-color: #ff0000;
   color: #ffffff;
   font-weight: bolder;
+  padding: 0.3em;
 }
 
 #zoom-glass {
@@ -25,3 +26,8 @@ the installer will append this file to the app vendored assets here: 'vendor/ass
   position: absolute;
   margin-left: -1em;
 }
+
+.fancybox-wrap{
+  zoom: 1.0;
+}
+
