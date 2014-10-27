@@ -11,8 +11,8 @@ the installer will append this file to the app vendored assets here: 'vendor/ass
 }
 
 #zoom-message {
-  background-color: #ff0000;
-  color: #ffffff;
+  background-color: #666;
+  color: #fff;
   font-weight: bolder;
   padding: 0.3em;
 }

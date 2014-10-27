@@ -39,7 +39,7 @@ $(function(){
                            aspectRatio : true,
                            type    : 'html',
                            height  : '100%',
-                           content : '<div class="fancybox-image" style="background-image:url(' + this.href + '); background-size: cover; background-position:50% 50%;background-repeat:no-repeat;height:100%;" /><a id="zoom-glass" href="' + this.href + '"><i class="fa fa-search-plus"></i></a></div>'
+                           content : '<div class="fancybox-image" style="max-height:100%; max-width:100%;margin:auto;display:block;height:auto"><a href="' + this.href + '"> s /><a id="zoom-glass" href="' + this.href + '"><img src="' + this.href + '" style="max-height:100%; max-width:100%;margin:auto;display:block;height:auto"></img></div><a id="zoom-glass" href="' + this.href + '"><i class="fa fa-search-plus"></i></a>'
                        })
           }
         }); 
