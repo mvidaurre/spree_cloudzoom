@@ -1,9 +1,9 @@
 <!-- replace '#product-thumbnails' -->
 <% if (@product.images + @product.variant_images).uniq.size > 1 %>
-  <ul id="product-thumbnails" class="thumbnails inline" data-hook>
+  <ul id="product-thumbnails" class="thumbnails list-inline" data-hook>
     <% @product.images.each do |i| %>
       <li class='tmb-all tmb-<%= i.viewable.id %>'>
-        <%= link_to(image_tag(i.attachment.url(:mini)), i.attachment.url(:product), :class => "cloudzoom-gallery", :rel => "fancybox-thumb", :'data-cloudzoom' =>
+        <%= link_to(image_tag(i.attachment.url(:mini)), i.attachment.url(:product), :class => "cloudzoom-gallery  thumbnail", :rel => "fancybox-thumb", :'data-cloudzoom' =>
          "useZoom: '#zoomlense-img', image: '#{i.attachment.url(:product)}', zoomImage: '#{i.attachment.url(:original)}'") %>
       </li>
     <% end %>
@@ -12,7 +12,7 @@
       <% @product.variant_images.each do |i| %>
         <% next if @product.images.include?(i) %>
         <li class='vtmb tmb-<%= i.viewable.id %>'>
-          <%= link_to(image_tag(i.attachment.url(:mini)), i.attachment.url(:product), :class => "cloudzoom-gallery", :rel => "fancybox-thumb", :'data-cloudzoom' =>
+          <%= link_to(image_tag(i.attachment.url(:mini)), i.attachment.url(:product), :class => "cloudzoom-gallery thumbnail", :rel => "fancybox-thumb", :'data-cloudzoom' =>
          "useZoom: '#zoomlense-img', image: '#{i.attachment.url(:product)}', zoomImage: '#{i.attachment.url(:original)}'") %>
         </li>
       <% end %>
