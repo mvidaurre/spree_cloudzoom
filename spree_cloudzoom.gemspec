@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_cloudzoom'
-  s.version     = '3.0.0.beta'
+  s.version     = '3.1.0.beta'
   s.summary     = 'Integrate cloudzoom jquery plugin to Spree'
   s.description = 'cloudzoom at http://www.starplugins.com/cloudzoom Cloud Zoom is a popular fly-out jQuery image zoom plugin used on many high profile retail sites.'
   s.required_ruby_version = '>= 2.1'
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 3.0.0.rc2'
+  s.add_dependency 'spree_core', '~> 3.1.0.beta'
 
   s.add_development_dependency 'capybara', '~> 2.2.1'
   s.add_development_dependency 'coffee-rails'
